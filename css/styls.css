@@ -1,0 +1,275 @@
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+.site-header {
+    padding: 50px 0;
+}
+.site-header .branding {
+    float: left;
+}
+a {
+    text-decoration: none;
+    color: #009ad8;
+}
+
+a {
+    background: transparent;
+}
+.site-header .branding .logo {
+    margin-right: 10px;
+}
+.site-header .branding .logo, .site-header .branding .logo-type {
+    display: inline-block;
+    vertical-align: middle;
+}
+img {
+    border: 0;
+}
+.site-header .branding .site-title {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-size: 1.1428571429em;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0 0 20px;
+    line-height: normal;
+}
+.site-header .branding .site-description {
+    font-size: 10px;
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+.main-navigation {
+    float: right;
+}
+.main-navigation .menu-toggle {
+    background: none;
+    border: 2px solid transparent;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    display: none;
+    outline: none;
+}
+.main-navigation .menu {
+    list-style: none;
+    display: inline-block;
+}
+.main-navigation .menu .menu-item {
+    float: left;
+    margin-left: 10px;
+}
+.main-navigation .menu .menu-item a {
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    color: white;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-weight: 400;
+}
+.main-navigation .menu .menu-item.current-menu-item a, .main-navigation .menu .menu-item:hover a {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+@media screen and (min-width: 991px) {
+    .mobile-navigation {
+        display: none !important;
+    }
+}
+.mobile-navigation {
+    padding: 30px 0 0;
+    clear: both;
+    display: none;
+}
+.mobile-navigation .menu {
+    background: #262936;
+    list-style: none;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.mobile-navigation .menu .menu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.mobile-navigation .menu .menu-item.current-menu-item a {
+    color: #009ad8;
+}
+.mobile-navigation .menu a {
+    padding: 20px;
+    display: block;
+    color: white;
+}
+.container:after {
+    content: " ";
+    clear: both;
+    display: block;
+    overflow: hidden;
+    height: 0;
+}
+.hero {
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+}
+.find-location {
+    position: relative;
+    margin-bottom: 70px;
+}
+.find-location input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+}
+.find-location input[type="submit"], .find-location input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+form input, form textarea, form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+.button, form input[type="submit"], form input[type="button"], form button, form input[type="reset"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+.forecast-container {
+    width: 100%;
+    background: #323544;
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.forecast-container .forecast {
+    width: 33.33%;
+}
+.forecast-container .forecast .forecast-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+.forecast-container .forecast.today .forecast-header .day {
+    float: left;
+}
+.forecast-container .forecast.today .forecast-header .date {
+    float: right;
+}
+.forecast-container .forecast.today .forecast-content {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.forecast-container .forecast .forecast-content {
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+.forecast-container .forecast.today .location {
+    font-size: 18px;
+    font-size: 1.2857142857em;
+    font-weight: 400;
+}
+.forecast-container .forecast .forecast-content .degree {
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+.custom {
+    color: #009ad8;
+    margin: 20px 0;
+}
+.forecast-container .forecast.today span {
+    margin-right: 20px;
+}
+.forecast-container .forecast.today span img {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.site-footer {
+    background: #262936;
+    padding: 50px 0;
+}
+.site-footer .subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+.site-footer .subscribe-form input[type="text"] {
+    padding: 20px 100px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+}
+.site-footer .subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+.site-footer .social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-size: 1.4285714286em;
+}
+p {
+    margin-top: 0;
+}
+.site-footer .social-links a:hover {
+    background: #009ad8;
+    color: white;
+}
+.forecast-container .forecast:nth-child(even) {
+    background-color: #262936;
+}
+.forecast-container {
+    width: 100%;
+    background: #323544;
+    display: flex
+;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.forecast-container .forecast.today .degree .num {
+    font-size: 90px;
+    font-size: 6.4285714286rem;
+    margin-right: 30px;
+}
